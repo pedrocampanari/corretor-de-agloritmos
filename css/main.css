@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #0A0F1C;
+}
+
+
+header {
+    /* background-color: #050a30; */
+    background-color: #121A2F;
+    box-shadow: 0 2px 5px rgba(179, 179, 179, 0.055);
+    color: white;
+    border-top: 5px solid #03fa6e;
+}
+
+.nav-header{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-nav-item-logo > img {
+    width: 170px;
+}
+
+
+.section-title {
+    padding: 10px 0 10px 0;
+}
+
+.section-title > h3{
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    color: #ececec;
+}
+
+
+.section-container-pending-tasks, .section-container-expired-tasks{
+    display: flex;
+    width: 100%;
+}
+
+.pending-tasks-item, .expired-tasks-item{
+    border: 1px solid #03fa6e;
+    border-radius: 10px 10px 10px;
+}
+
+
+.task-title > h3 {
+    color: #03fa6e;
+    font-size: 19px;
+}
+
+.task-description, .task-description-expired {
+    color: #ececec;
+    font-size: 14px;
+}
+
+.see-task-button {
+    display: flex;
+    align-items: center;
+    color: #03fa6e;
+    justify-content: center;
+}
+
+.see-task-button > button {
+    width: 17rem;
+    height: 35px;
+    border-radius: 10px 10px 10px;
+    border: 1px solid white;
+    background-color: #000b1d;
+    color: #ececec;
+    font-weight: 600;
+}
+
+.see-task-button > button:hover {
+    background-color: #03fa6e;
+    color: #0d1529;
+    transition: 0.4s;
+}
+
+.see-task-button > button > .icon-tag > img{
+    width: 15px;
+    height: 15px;
+}
+
+
+.section-container-expired-tasks {
+    column-gap: 10px;
+    flex-wrap: wrap;
+
+
+}
+
+.task-description-expired > p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 10.4rem;
+    display: -webkit-box;
+    line-clamp: 9;
+    -webkit-box-orient: vertical; 
+
+}
+
+.expired-tasks-item{
+    box-sizing: 1/1;
+    width: 17rem;
+    height:17rem;
+
+}
+
+footer {
+    background-color: #03fa6e;
+    text-align: center;
+    font-size: 10px;
+
+}
