@@ -97,6 +97,8 @@ header {
 
 .section-container-expired-tasks {
     column-gap: 10px;
+    row-gap: 10px;
+    justify-content: space-between;
     flex-wrap: wrap;
 
 
